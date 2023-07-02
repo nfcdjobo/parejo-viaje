@@ -27,9 +27,9 @@ window.addEventListener(`DOMContentLoaded`, (e)=>{
                     copyright.innerHTML=compagie.copyright;
                     
                     let imgPath= location.href.includes('views/index.html')? '../logics/':'./../../logics/';
-                     document.getElementById('favicon').href=imgPath+compagie.photo
-                    document.querySelectorAll('img[logo=my-logo]').forEach(item=>item.src=imgPath+compagie.photo);
-                    phtoUser.src=imgPath+JSON.parse(localStorage.SESSION_TRANSPORT).body.user.photo;
+                    //  document.getElementById('favicon').href=imgPath+compagie.photo
+                    // document.querySelectorAll('img[logo=my-logo]').forEach(item=>item.src=imgPath+compagie.photo);
+                    // phtoUser.src=imgPath+JSON.parse(localStorage.SESSION_TRANSPORT).body.user.photo;
                     adminName.textContent=JSON.parse(localStorage.SESSION_TRANSPORT).body.user.nomPrenom.split(' ').slice(0, 2);
                 }
                 
