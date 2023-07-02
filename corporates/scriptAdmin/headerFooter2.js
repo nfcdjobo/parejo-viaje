@@ -6,7 +6,7 @@ window.addEventListener(`DOMContentLoaded`, (e)=>{
             .then(res=>res.json())
             .then(succes=>{
                 const data=succes.data;
-                const myLogo=document.querySelectorAll('img[logo=my-logo]');
+                // const myLogo=document.querySelectorAll('img[logo=my-logo]');
                 const phtoUser=document.getElementById('phto-user');
                 const copyright=document.getElementById('copyright');
                 const adminName=document.getElementById('admin-name')
